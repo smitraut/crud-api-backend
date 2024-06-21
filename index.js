@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/api/products', productRoute);
 
 // Database connection
-mongoose.connect("mongodb+srv://crudadmin:crudadmin123@backenddb.spzubmj.mongodb.net/Node-Api?retryWrites=true&w=majority&appName=BackendDb")
+mongoose.connect("mongodb+srv://crudadmin:crudadmin123@backenddb.spzubmj.mongodb.net/node_api?retryWrites=true&w=majority&appName=BackendDb")
     .then(() => {
         console.log('Connected to database');
         app.listen(3000, () => {
